@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/dialog_oper_prompt_iv"
+            android:layout_width="@dimen/spacing_80"
+            android:layout_height="@dimen/spacing_80"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/spacing_62"
+            android:src="@color/color_e6e6e6" />
+
+        <TextView
+            android:id="@+id/dialog_oper_prompt_topic_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_oper_prompt_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/spacing_10"
+            android:layout_marginLeft="@dimen/spacing_20"
+            android:layout_marginRight="@dimen/spacing_20"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:textColor="@color/color_041d29"
+            android:textSize="@dimen/font_size_16"
+            tools:text="操作反馈的状态" />
+
+        <TextView
+            android:id="@+id/dialog_oper_prompt_des_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_oper_prompt_topic_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/spacing_30"
+            android:layout_marginLeft="@dimen/spacing_20"
+            android:layout_marginRight="@dimen/spacing_20"
+            android:textColor="@color/color_9b9b9b"
+            android:textSize="@dimen/font_size_12"
+            android:visibility="invisible"
+            tools:text="这里是关于反馈操作的文案" />
+
+        <com.cloud.core.icons.IconFontView
+            android:id="@+id/dialog_oper_prompt_target_ifv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_oper_prompt_des_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/spacing_28"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingBottom="@dimen/spacing_12"
+            android:paddingLeft="@dimen/spacing_12"
+            android:paddingRight="@dimen/spacing_12"
+            android:paddingTop="@dimen/spacing_12"
+            android:visibility="gone"
+            app:iftv_iconColor="@color/color_2395ff"
+            app:iftv_iconSize="@dimen/font_size_12"
+            app:iftv_textColor="@color/color_2395ff"
+            app:iftv_textDirection="left"
+            app:iftv_textFontSpacing="@dimen/spacing_5"
+            app:iftv_textSize="@dimen/font_size_12"
+            app:iftv_textStyle="none"
+            app:iftv_ucode="&#xe648;"
+            tools:iftv_text="可跳转页面" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

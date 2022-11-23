@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map_ft"
+        class="com.amap.api.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/cl_retrieve_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/return_iv"
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="3dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/cl_left_icon" />
+
+        <TextView
+            android:id="@+id/selected_city_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cl_retrieve_city_bg"
+            android:drawableRight="@mipmap/cl_down_icon"
+            android:drawablePadding="3dp"
+            android:maxWidth="90dp"
+            android:minWidth="80dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="6dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            tools:text="杭州市" />
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:drawableLeft="@mipmap/cl_search_icon"
+            android:drawablePadding="6dp"
+            android:inputType="text"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:singleLine="true"
+            android:textColor="#041d29"
+            android:textColorHint="#999999"
+            android:textSize="14sp"
+            tools:hint="商圈/写字楼/街道等" />
+
+        <com.cloud.core.view.VariableButton
+            android:id="@+id/search_vb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            app:vb_backgroundColor="#3795FF"
+            app:vb_bottomLeftRadius="20dp"
+            app:vb_bottomRightRadius="20dp"
+            app:vb_disableBackgroundColor="#303795FF"
+            app:vb_isEnabled="true"
+            app:vb_paddingBottom="4dp"
+            app:vb_paddingTop="4dp"
+            app:vb_pressBackgroundColor="#22AEFF"
+            app:vb_text="搜索"
+            app:vb_textColor="#ffffff"
+            app:vb_topLeftRadius="20dp"
+            app:vb_topRightRadius="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tip_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_ll"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/cl_retrieve_tip_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/cl_tip_icon"
+            android:drawablePadding="5.5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="拖动地图以调整定位"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/tip_close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="6dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="6dp"
+            android:src="@mipmap/cl_close_icon" />
+    </LinearLayout>
+</RelativeLayout>

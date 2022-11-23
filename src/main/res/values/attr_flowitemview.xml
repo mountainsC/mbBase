@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DynamicViewGroup">
+        <attr name="dvg_orientation" format="integer">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="dvg_gravity" format="integer">
+            <enum name="left" value="10" />
+            <enum name="right" value="11" />
+            <enum name="center" value="12" />
+            <enum name="top" value="13" />
+            <enum name="bottom" value="14" />
+            <enum name="both" value="15" />
+        </attr>
+        <attr name="dvg_maxColumnNum" format="integer" />
+        <attr name="dvg_maxLineNum" format="integer" />
+        <attr name="dvg_horizontalSpacing" format="dimension" />
+        <attr name="dvg_verticalSpacing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowItemsView">
+        <attr name="fiv_defaultItemBackground" format="reference" />
+        <attr name="fiv_selectedItemBackground" format="reference" />
+        <attr name="fiv_disableItemBackground" format="reference" />
+        <attr name="fiv_horizontalPadding" format="dimension" />
+        <attr name="fiv_verticalPadding" format="dimension" />
+        <attr name="fiv_defaultItemTextColor" format="color" />
+        <attr name="fiv_selectedItemTextColor" format="color" />
+        <attr name="fiv_disableItemTextColor" format="color" />
+        <attr name="fiv_singleCheck" format="boolean" />
+        <attr name="fiv_singleCheckDisCancel" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlowSkuView">
+        <attr name="fsv_maxHeight" format="dimension" />
+        <attr name="fsv_maxWidth" format="dimension" />
+    </declare-styleable>
+</resources>

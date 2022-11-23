@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tool:background="#00ffff">
+
+    <include
+        android:id="@+id/select_all"
+        layout="@layout/simple_dialog_selection_multiple_item"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_marginRight="@dimen/spacing_10" />
+
+    <ListView
+        android:id="@+id/select_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/spacing_10"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_marginRight="@dimen/spacing_10"
+        android:layout_marginTop="@dimen/spacing_10"
+        android:layout_weight="1"
+        android:background="@drawable/simple_dialog_selection_background"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/select_sure"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="@dimen/spacing_20"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_marginRight="@dimen/spacing_10"
+        android:background="@drawable/simple_dialog_selection_background"
+        android:text="确认"
+        android:textColor="#4A90E2"
+        android:textSize="@dimen/font_size_16" />
+</LinearLayout>

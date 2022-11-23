@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tool:background="#00ffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/spacing_10"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_marginRight="@dimen/spacing_10"
+        android:layout_marginTop="@dimen/spacing_10"
+        android:layout_weight="1"
+        android:background="@drawable/simple_dialog_selection_background">
+
+        <LinearLayout
+            android:id="@+id/select_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_20"
+            android:paddingRight="@dimen/spacing_20" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/select_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="@dimen/spacing_20"
+        android:layout_marginLeft="@dimen/spacing_10"
+        android:layout_marginRight="@dimen/spacing_10"
+        android:background="@drawable/simple_dialog_selection_background"
+        android:text="取消"
+        android:textColor="#F5533A"
+        android:textSize="@dimen/font_size_16" />
+</LinearLayout>

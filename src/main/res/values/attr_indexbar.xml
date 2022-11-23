@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IndexBar">
+        <attr name="ib_textSize" format="dimension" />
+        <attr name="ib_textColor" format="color" />
+        <attr name="ib_pressBackground" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerticalFlowTrackOneView">
+        <attr name="vftov_timeTextSize" format="dimension" />
+        <attr name="vftov_timeTextColor" format="color" />
+        <attr name="vftov_timeSelectTextColor" format="color" />
+        <attr name="vftov_paddingLeft" format="dimension" />
+        <attr name="vftov_paddingRight" format="dimension" />
+        <attr name="vftov_paddingTop" format="dimension" />
+        <attr name="vftov_paddingBottom" format="dimension" />
+        <attr name="vftov_nodeCableLineColor" format="reference" />
+        <attr name="vftov_nodeSize" format="dimension" />
+        <attr name="vftov_nodeColor" format="color" />
+        <attr name="vftov_selectNodeColor" format="color" />
+        <attr name="vftov_titleTextSize" format="dimension" />
+        <attr name="vftov_titleTextBlod" format="boolean" />
+        <attr name="vftov_titleTextColor" format="color" />
+        <attr name="vftov_leftTextNodeSpacing" format="dimension" />
+        <attr name="vftov_rightTextNodeSpacing" format="dimension" />
+        <attr name="vftov_desTextSize" format="dimension" />
+        <attr name="vftov_desTextColor" format="color" />
+        <attr name="vftov_leftViewWidth" format="dimension" />
+        <attr name="vftov_buttomOffset" format="dimension" />
+    </declare-styleable>
+</resources>
